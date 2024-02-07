@@ -1,0 +1,40 @@
+/* Styling for the navbar */
+.navbar {
+    background-color: #343a40; /* Dark background color */
+}
+
+.navbar-brand {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff; /* White text color */
+}
+
+.navbar-nav .nav-link {
+    font-size: 18px;
+    color: #fff; /* White text color */
+}
+
+/* Styling for the table */
+.table {
+    background-color: #f8f9fa; /* Light background color */
+}
+
+.table th, .table td {
+    font-size: 16px;
+    color: #343a40; /* Dark text color */
+}
+
+/* Styling for the delete icon */
+.fa-trash {
+    color: red; /* Red color for the trash icon */
+}
+
+/* Styling for links */
+a {
+    text-decoration: none; /* Remove underline from links */
+    transition: color 0.3s; /* Smooth color transition */
+}
+
+a:hover {
+    color: #dc3545; /* Change color on hover */
+}
