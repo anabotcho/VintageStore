@@ -45,6 +45,16 @@
         .footer span {
             font-size: 14px;
         }
+        /* Custom dropdown styles */
+        .dropdown-vertical .dropdown-menu {
+            top: 100%;
+            left: 0;
+            width: 200px; /* Adjust width as needed */
+            margin-top: 0; /* Remove default margin-top */
+        }
+        .dropdown-vertical .nav-link {
+            position: relative;
+        }
     </style>
 </head>
 <body>
@@ -61,14 +71,24 @@
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="/">Home</a>
         </li>
+        <!-- Clothes with dropdown menu -->
+        <li class="nav-item dropdown dropdown-vertical">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Clothes
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="/available_shirts">Shirts</a></li>
+            <li><a class="dropdown-item" href="/available_pants">Pants</a></li>
+            <li><a class="dropdown-item" href="/available_jackets">Jackets</a></li>
+            <!-- Add more dropdown items as needed -->
+          </ul>
+        </li>
+        <!-- Add login button -->
         <li class="nav-item">
-          <a class="nav-link" href="/available_clothes">Available Clothes</a>
+          <a class="nav-link" href="Userlogin.html">Login</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/my_clothes">My Clothes</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/add_clothe">Add New Clothes</a>
+          <a class="nav-link" href="/userregistration.html">Registration</a>
         </li>
       </ul>
     </div>
