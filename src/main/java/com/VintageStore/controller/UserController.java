@@ -8,9 +8,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 import java.util.Optional;
 import com.VintageStore.entity.User;
-import com.VintageStore.entity.User;
 import com.VintageStore.service.UserService;
-import com.VintageStore.service.MyClotheListService;
 
 @RestController
 @RequestMapping("/api/users")
@@ -20,8 +18,8 @@ public class UserController {
     private UserService userService;
 
     @GetMapping("/{userId}")
-    public ResponseEntity<User> getUserById(@PathVariable Long userId) {
-        Optional<User> user = Optional.ofNullable(userService.getUserById(userId));
+    public ResponseEntity<Optional<User>> getUserById(@PathVariable Long userId) {
+        Optional<Optional<User>> user = Optional.ofNullable(userService.getUserById(userId));
         return user.map(ResponseEntity::ok).orElseGet(() -> ResponseEntity.notFound().build());
     }
 
